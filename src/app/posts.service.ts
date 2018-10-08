@@ -8,27 +8,7 @@ import * as firebase from 'firebase';
 })
 export class PostsService {
 
-  posts = [
-    {
-      title: 'Premier Post',
-      content: 'BlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlou',
-      createdAt: new Date(),
-      loveIts: 0
-    },
-    {
-      title: 'Second Post',
-      content: 'BlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlou',
-      createdAt: new Date(),
-      loveIts: 0
-            
-    },
-    {
-      title: 'Troisième Post',
-      content: 'BlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlouBlou',
-      createdAt: new Date(),
-      loveIts: 0
-    }
-  ];
+  posts: Post[] = [];
   
   postsSubject = new Subject<Post[]>();
 
